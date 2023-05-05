@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./duantrangchu.css" />
+    <link rel="stylesheet" href="./body.css" />
+  </head>
+  <body>
+    <section class="head-register">a
+      <a href="/Case/trang chủ/duantrangchu.html">
+        <img class="adidas-logo" src="/Case/ảnh/adidas-logo.jpg"/>
+      </a>
+    </section>
+        <form id="search">
+        
+      </form>
+    </section>
+    <h1
+      style="
+        text-align: center;
+        color: #0585BA;
+        font-size: 3em;
+        margin: 50px;
+      "
+    >
+      Thêm Sản Phẩm Mới
+    </h1>
+
+    <section class="admin-them-moi" >
+      <form id="sanphammoi">
+      <div class="khu-hinh">
+        <div>
+          <span>Tên Sản Phẩm</span>
+          <span>Link Hình Ảnh</span>
+          <span>Size</span>
+          <span>Phân Loại</span>
+          <span>Giá</span>
+          <span>Số Lượng Trong Kho</span>
+        </div>
+        <div >
+          <input
+            type="text"
+            class="namesanpham"
+            id="namesanpham"
+            placeholder="nhập tên sản phẩm mới"
+            name="namesanpham"
+          />
+          <input 
+          type="text" 
+          class="image"
+          id="image" 
+          name="image"
+          placeholder="nhập link hình ảnh">
+
+          <select name="contentsanpham" id="contentsanpham">
+            <option value="size-giay-dep">size giày dép</option>
+            <option value="size-quan-ao">size quần áo</option>
+          </select>
+
+
+          <select name="phanloaisanpham" id="phanloaisanpham">
+            <option value="Giày">Giày</option>
+            <option value="Dép">Dép</option>
+            <option value="Quần GYM Nữ">Quần GYM Nữ</option>
+            <option value="Áo GYM Nữ">Áo GYM Nũ</option>
+          </select>
+
+          <input
+            type="text"
+            id="giasanpham"
+            class="giasanpham"
+            name="giasanpham"
+            placeholder="nhập giá sản phẩm"
+          />
+
+          <input class="slsanpham" id="slsanpham" name="slsanpham" type="number" min="0" max="1000"  style="width: 50px;background-color: white;"/>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; margin-bottom: 70px;margin-top: 30px;">
+        <button id="btn-submit" style="padding: 10px;border-radius: 10px;background-color: #34B4E0;">thêm sản phẩm mới</button>
+      </div>
+    </form>
+    </section>
+    <h1
+      style="
+        text-align: center;
+        color: #0585BA;
+        font-size: 3em;
+        margin-bottom: 50px;
+      "
+    >
+      Sản Phẩm Có Trong Kho
+    </h1>
+    <section class="admin-sanpham">
+      <table class="table-admin-sanpham" id="table-admin-sanpham">
+        <div>
+          <tr>
+            <th>ID</th>
+            <th>Tên Sản Phẩm</th>
+            <th>HÌNH ẢNH</th>
+            <th>NỘI DUNG</th>
+            <th>PHÂN LOẠI</th>
+            <th>Giá</th>
+            <th>Số Lượng TỒN KHO</th>
+            <th>edit</th>
+            <th>delete</th>
+          </tr>
+        </div>
+        <div>
+          <tbody id="tbody"></tbody>
+        </div>
+      </table>
+      <br />
+    </section>
+    <section>
+      <h1
+        style="
+          text-align: center;
+          color: #0585BA;
+          font-size: 3em;
+          margin-bottom: 50px;
+        "
+      >
+        Quản Lý Người Dùng
+      </h1>
+      
+        <table class="ql-user">
+          <div>
+            <tr>
+              <th>ID</th>
+              <th>phân loại quản lý</th>
+              <th>ussername</th>
+              <th>password</th>
+              <th>Email</th>
+              <th>Địa Chỉ</th>
+              <th>cấm hoạt đông</th>
+            </tr>
+          </div>
+          <div>
+            <tr>
+              <td>1</td>
+              <td>ADMIN</td>
+              <td>ADMIN</td>
+              <td>ADMIN</td>
+              <td>ADMIN@email.com</td>
+              <td>ADMINsss</td>
+              <td></td>
+            </tr>
+          </div>
+          <div>
+           <tbody id="nguoidung"></tbody>
+          </div>
+        </table>
+      
+    </section>
+    <section class="footer">
+      <p>số điện thoại liên hệ hỗ trợ:0977xxx999</p>
+      <a href="https://www.facebook.com/adidasVN/?brand_redir=182162001806727"
+        ><ion-icon name="logo-facebook"></ion-icon
+      ></a>
+      <a href="https://twitter.com/adidas"
+        ><ion-icon name="logo-twitter"></ion-icon
+      ></a>
+      <a href="https://www.pinterest.de/adidas/"
+        ><ion-icon name="logo-pinterest"></ion-icon
+      ></a>
+      <a href="https://www.tiktok.com/@adidas?lang=en"
+        ><ion-icon name="logo-tiktok"></ion-icon
+      ></a>
+      <a href="https://www.youtube.com/c/adidas"
+        ><ion-icon name="logo-youtube"></ion-icon
+      ></a>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./admin.js"></script>
+  </body>
+</html>

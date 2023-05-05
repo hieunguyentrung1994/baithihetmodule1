@@ -1,0 +1,16 @@
+body{
+    background-image: url(/Case/ảnh/anhadidas1.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search1{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
